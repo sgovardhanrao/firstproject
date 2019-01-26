@@ -2,7 +2,7 @@
 
 sum=0
 avg=0
-for i in $*
+for x in $e
 do
 sum=`expr $sum + $i`
 done

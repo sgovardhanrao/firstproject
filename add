@@ -2,5 +2,6 @@
 read a
 read b
 read c
+read d
 add=`expr $a + $b + $c`
 echo $add

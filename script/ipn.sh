@@ -3,7 +3,7 @@
 echo " enter  number "
 
 echo " given no. is  "
-case $x in
+case $1 in
 0)echo " zero ";;
 1)echo " one ";;
 2)echo " two ";;

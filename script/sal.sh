@@ -1,5 +1,5 @@
 #!/bin/bash
-echo " enter  basic"
+
 basic=$1
 
 a=`expr 50 \* $basic`

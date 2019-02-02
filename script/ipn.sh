@@ -2,8 +2,6 @@
 
 echo " enter  number "
 
-read $1
-
 echo " given no. is  "
 case $1 in
 0)echo " zero ";;

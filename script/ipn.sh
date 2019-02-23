@@ -2,10 +2,8 @@
 
 echo " enter  number "
 
-read number
-
 echo " given no. is  "
-case $number in
+case $1 in
 0)echo " zero ";;
 1)echo " one ";;
 2)echo " two ";;

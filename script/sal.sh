@@ -1,6 +1,6 @@
 #!/bin/bash
-echo " enter  basic"
-read basic
+
+basic=$1
 
 a=`expr 50 \* $basic`
 dp=`expr $a / 100`

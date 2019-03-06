@@ -1,9 +1,9 @@
-#!/bin/bash 
+#!/bin/biash 
 echo "Please Enter a String" 
-read name 
+read $1 
 echo " " 
-name1=`echo $name | rev` 
-if [ "$name" == "$name1" ] 
+name1=`echo $1 | rev` 
+if [ "$1" == "$name1" ] 
 then 
 echo "$name is palindrome" 
 else 

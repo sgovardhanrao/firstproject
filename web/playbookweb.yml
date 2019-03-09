@@ -1,0 +1,10 @@
+- hosts: govardhan
+  
+  tasks:
+        - name: install java 
+          shell: apt-get install oracle-java8-installer
+
+        - name: installing tomcat
+          get_url: url=http://mirrors.estointernet.in/apache/tomcat/tomcat-9/v9.0.16/bin/apache-tomcat-9.0.16.tar.gz dest=/home/ubuntu/govardhan
+        - name: unarchive file
+          unarchive:  src=/home/ubuntu/govardhan/apache-tomcat-9.0.16.tar.gz dest=/home/ubuntu/govardhan  copy=no

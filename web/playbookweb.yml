@@ -2,6 +2,7 @@
   
   tasks:
         - name: install java 
+          become: yes
           shell: apt-get install oracle-java8-installer
 
         - name: installing tomcat

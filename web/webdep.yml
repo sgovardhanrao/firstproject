@@ -1,0 +1,10 @@
+- hosts: govardhan
+
+  tasks:
+        - name: stop tomcat
+          command: bash /home/ubuntu/govardhan/apache-tomcat-9.0.16/bin/shutdown.sh
+        - name: copy war
+          copy: src=web.war dest=/home/ubuntu/govardhan/apache-tomcat-9.0.16/webapps owner=ubuntu group=ubuntu mode=0777
+
+        - name: start tomcat
+          command: bash /home/ubuntu/govardhan/apache-tomcat-9.0.16/bin/startup.sh

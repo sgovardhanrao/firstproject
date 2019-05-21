@@ -6,6 +6,6 @@
           apt: name=openjdk-8-jdk state=present
           
         - name: installing tomcat
-          get_url: url=http://mirrors.estointernet.in/apache/tomcat/tomcat-9/v9.0.16/bin/apache-tomcat-9.0.16.tar.gz dest=/home/ubuntu/govardhan
+          get_url: url=http://mirrors.estointernet.in/apache/tomcat/tomcat-9/v9.0.20/bin/apache-tomcat-9.0.20.tar.gz dest=/home/ubuntu/govardhan
         - name: unarchive file
           unarchive:  src=/home/ubuntu/govardhan/apache-tomcat-9.0.16.tar.gz dest=/home/ubuntu/govardhan  copy=no
